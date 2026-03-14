@@ -1,12 +1,10 @@
 ## Hey there!
-
-<!--
-
 # lauremariho.github.io
 
 My personal website — research, portfolio, and contact info.
 
 Built with HTML, CSS, and hosted on GitHub Pages.
+<!--
 **lauremariho/lauremariho** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:

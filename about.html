@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Laure Mari Ho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">Laure Mari Ho</a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">CV</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-body">
+    <section class="anim narrow" style="padding-top: 6rem;">
+      <h2 class="section-title">About</h2>
+      <p style="color: var(--grey-600); line-height: 1.9; margin-bottom: 1.5rem;">"My name is Laure, and I'm driven by a deep curiosity about the natural world and a care for the people in it. I research the genomic basis of evolution, organismal diversity, and gene-environment interactions in the lab of Dr. Peter Sudmant at the University of California, Berkeley, spanning computational genomics, ecological field research, and wet lab methods, with a goal of advancing genetic epidemiology."</p>
+	<p style="color: var(--grey-600); line-height: 1.9; margin-bottom: 1.5rem;">"Alongside my research, I work in research administration, which has shown me the full picture of what it takes to keep science moving. That same curiosity and care have led me from science to craft (textiles and design, ceramics, and photography, primarily) and sustainable agriculture—and weaving it all together has made me a stronger scientist."</p>
+		<p style="color: var(--grey-600); line-height: 1.9; margin-bottom: 1.5rem;">"Outside of research, I spend most of my time outdoors; my favorite activities being skiing, climbing, and surfing. I grew up in Saratoga, California, caught between the Sierra Nevada and the Pacific, and never lost my pull toward both.</p>
+    </section>
+  </div>
+
+  <footer style="text-align:center; padding:2rem; color:#a3a19b; font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase;">© 2026 Laure Mari Ho</footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
